@@ -6,10 +6,10 @@
   --black: #1d1c1c;
   --white: #fff;
   --light-color: #666;
-  --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  --box-shadow: 0 .5rem 1.5rem #eee0c7 ;
 }
 
-* {
+body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -19,6 +19,7 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all .2s linear;
+  background-color: #fbf6ed;
 }
 
 html {
@@ -65,18 +66,18 @@ section {
 
 .header {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
-  background: var(--white);
+  padding: 20px 30px;
+  height: 80px;
+  background:#fbf6ed ;
   box-shadow: var(--box-shadow);
 }
 
 .header .logo {
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 3rem;
+  font-weight: bold;
   color: var(--black);
 }
 
@@ -84,9 +85,15 @@ section {
   color: var(--orange);
 }
 
+.logo img {
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+}
+
 .header .navbar a {
-  font-size: 1.7rem;
-  margin: 0 1rem;
+  font-size: 2rem;
+  margin: 0 1.5rem;
   color: var(--black);
   text-decoration: none;
 }
@@ -98,8 +105,8 @@ section {
 }
 
 .header .icons div {
-  font-size: 2.5rem;
-  margin-left: 1.7rem;
+  font-size: 3rem;
+  margin-left: 2rem;
   color: var(--black);
   cursor: pointer;
 }
@@ -234,13 +241,13 @@ img {
 }
 
 .custom-shape-divider-bottom-1684324473 .shape-fill {
-  fill: var(--pink);
+  fill: #5a4279;
 }
 
 /* about us */
 
 .about {
-  background: var(--pink);
+  background: #5a4279;
 }
 
 .about .row {
@@ -541,6 +548,7 @@ img {
     width: 90%;
   }
 }
+
 
 @media (max-width:450px) {
   html { font-size: 50%; }
